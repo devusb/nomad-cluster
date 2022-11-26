@@ -5,7 +5,7 @@ job "demo" {
     count = 2
 
     network {
-      port  "http"{
+      port "http" {
         to = -1
       }
     }
@@ -29,7 +29,7 @@ job "demo" {
 
     task "server" {
       env {
-        HTTP_PORT    = "${NOMAD_PORT_http}"
+        HTTP_PORT = "${NOMAD_PORT_http}"
       }
 
       driver = "docker"
