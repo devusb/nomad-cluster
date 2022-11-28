@@ -42,8 +42,6 @@ instance_id:
 nfs:
   shareHost: gaia0
   shareBasePath: "/var/lib/exports/nomad-volumes"
-  # shareHost:shareBasePath should be mounted at this location in the controller container
-  controllerBasePath: "/storage"
   dirPermissionsMode: "0777"
   dirPermissionsUser: root
   dirPermissionsGroup: root

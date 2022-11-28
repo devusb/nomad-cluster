@@ -47,6 +47,8 @@ job "traefik" {
     address = ":8080"
     [entryPoints.traefik]
     address = ":8081"
+    [entryPoints.postgres]
+    address = ":5432"
 
 [api]
     dashboard = true
