@@ -14,9 +14,9 @@ job "rpilocator" {
 
       template {
         data = <<EOH
-      PUSHOVER_TOKEN="{{with secret "secret/data/rss-pushover/rpilocator"}}{{.Data.data.token}}{{end}}"
-      PUSHOVER_USER="{{with secret "secret/data/rss-pushover/rpilocator"}}{{.Data.data.user}}{{end}}"
-      EOH
+PUSHOVER_TOKEN="{{with secret "secret/data/rss-pushover/rpilocator"}}{{.Data.data.token}}{{end}}"
+PUSHOVER_USER="{{with secret "secret/data/rss-pushover/rpilocator"}}{{.Data.data.user}}{{end}}"
+EOH
 
         destination = "secrets/file.env"
         env         = true
