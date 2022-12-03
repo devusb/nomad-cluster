@@ -1,6 +1,6 @@
 type         = "csi"
-id           = "postgres"
-name         = "postgres"
+id           = "golink"
+name         = "golink"
 plugin_id    = "org.democratic-csi.nfs"
 capacity_min = "1GiB"
 capacity_max = "1GiB"
