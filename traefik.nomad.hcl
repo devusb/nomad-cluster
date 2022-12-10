@@ -34,7 +34,6 @@ job "traefik" {
       config {
         image        = "traefik:v2.2"
         network_mode = "host"
-        advertise_ipv6_address = false
 
         volumes = [
           "local/traefik.toml:/etc/traefik/traefik.toml",
